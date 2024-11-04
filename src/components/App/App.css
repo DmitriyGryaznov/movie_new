@@ -1,0 +1,95 @@
+@import '~antd/dist/antd.css';
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+.movie-app {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+    width: 1010px;
+    height: auto;
+    background: #FFFFFF;
+    font-family: 'Inter';
+}
+
+.ant-alert {
+    width: auto;
+    font-size: 40px;
+    margin: 205px auto;
+}
+
+.ant-alert-message {
+    font-size: 40px;
+}
+
+.ant-input {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 938px;
+    height: 40px;
+}
+
+.app-pagination {
+    margin: 17px auto 18px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app-search-field .ant-input {
+    width: 938px;
+    height: 40px;
+}
+
+.ant-tabs .ant-tabs-nav-wrap {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.ant-tabs-nav::before {
+    width: 129px;
+    /*align-self: center;*/
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 420px) {
+    .movie-app {
+        width: 420px;
+        margin: 0 auto;
+    }
+
+    .ant-input {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        width: 388px;
+        height: 40px;
+    }
+
+    .movie-card {
+        max-width: 416px;
+    }
+}

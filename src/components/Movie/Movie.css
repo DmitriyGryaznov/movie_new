@@ -1,0 +1,217 @@
+@import '~antd/dist/antd.css';
+.movie-title {
+    display: flex;
+    flex-direction: row;
+    width: 210px;
+}
+
+.movie-head {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.view {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter';
+    justify-content: space-between;
+    width: 454px;
+    height: 281px;
+    background: #FFFFFF;
+    list-style: none;
+    margin: 18px 19px 18px 16px;
+    box-shadow: 1px 2px 5px 5px #E5E5E5;
+}
+
+img {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 183px;
+    height: 281px;
+}
+
+img::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+
+}
+
+img::after {
+    content: url("https://fakeimg.pl/183x281/");
+    display: block;
+    background: #E5E5E5;
+    width: 183px;
+    height: 281px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    box-sizing: border-box;
+    width: 271px;
+    padding: 12px 20px 0 12px;
+}
+
+.movie-genre {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 20px;
+    padding: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    background: #FAFAFA;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    margin: 5px 8px 0 0;
+}
+.movie-genres {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ant-rate {
+    position: absolute;
+    width: 239px;
+    height: 35px;
+    right: 9px;
+    bottom: 0;
+    margin: 0;
+
+}
+.anticon {
+    text-align: end;
+    font-size: 16px;
+}
+
+.ant-typography {
+    margin-top: 5px;
+}
+
+.ant-progress {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 12px 9px auto auto;
+   }
+.ant-progress-circle.ant-progress-status-success .ant-progress-text {
+    color: #111111;
+}
+
+.lock-image {
+    width: 183px;
+    height: 281px;
+}
+
+@media screen and (max-width: 420px) {
+    .movie-title {
+        width: 300px;
+    }
+
+    .movie-head {
+        margin-left: 67px;
+        margin-bottom: 5px;
+        width: 300px;
+    }
+
+    .view {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        font-family: 'Inter';
+        justify-content: flex-start;
+        width: 387px;
+        height: 245px;
+        background: #FFFFFF;
+        list-style: none;
+        margin: 18px 19px 18px 16px;
+        box-shadow: 1px 2px 5px 5px #E5E5E5;
+    }
+    img {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        margin: 6px 10px;
+        width: 60px;
+        height: 91px;
+    }
+
+    img::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+
+    }
+
+    img::after {
+        content: url("https://fakeimg.pl/60x91/");
+        display: block;
+        background: #E5E5E5;
+        width: 60px;
+        height: 91px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .description {
+        margin-left: 9px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        box-sizing: border-box;
+        width: 271px;
+        padding: 4px 0 0 3px;
+    }
+
+    .movie-date-exit {
+        margin-left: 67px;
+    }
+
+    .ant-typography {
+        width: 367px;
+        height: auto;
+        margin-top: 5px;
+    }
+    .movie-genres {
+        box-sizing: border-box;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: 67px;
+        margin-bottom: 5px;
+        margin-top: 2px;
+    }
+
+    .ant-progress {
+        margin: 5px 8px auto auto;
+        left: 0;
+    }
+    .lock-image {
+        width: 60px;
+        height: 91px;
+    }
+
+}
